@@ -18,6 +18,10 @@
   @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   .navbar-nav a {
     color: #CCC5B9;
   }
@@ -30,11 +34,37 @@
     border: #252422;
 
   }
+
+  .bg {
+    background-color: #CCC5B9;
+  }
+
+  .col-md-6 {
+    text-align: justify;
+  }
+
+  .card img {
+    height: 250px;
+  }
+
+  footer {
+    background-color: #252422;
+    color: white;
+  }
+
+  .o {
+    height: 400px;
+
+  }
+
+  .bg1 {
+    background-color: #554949;
+  }
 </style>
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg" style="background-color:#252422 ;">
+  <nav class="navbar navbar-expand-lg sticky-top" style="background-color:#252422 ;">
     <div class="container-fluid mx-5">
       <a style="font-family: 'Karla', sans-serif;color: #CCC5B9;font-weight: bold;" class="navbar-brand"
         href="#">Sackai</a>
@@ -45,8 +75,9 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="#il1">About</a>
+          <a class="nav-link" href="#il2">Portofio</a>
+          <a class="nav-link" href="#il3">Contact</a>
         </div>
       </div>
     </div>
@@ -67,31 +98,106 @@
     </div>
   </div>
   <!-- Akhir bio -->
-  <div style="background-color:#CCC5B9 ;" class="row mt-5">
-    <h3 class="text-center">About</h3>
 
+  <div class="bg py-4 my-2" id="il1">
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <h3 class="text-center mb-3">About</h3>
+        <div class="col-md-6">
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled the
-            release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-            software
-            like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text
+            of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and scrambled the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+            including versions of Lorem Ipsum.</p>
         </div>
-      </div>
-      <div class="col-6">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's
-          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled the
-          release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
-          like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+        <div class="col-md-6">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text
+            of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and scrambled the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+            including versions of Lorem Ipsum.</p>
+        </div>
       </div>
     </div>
   </div>
+  <!-- akhir about -->
+
+  <div class="my-4 py-2">
+    <div class="container">
+      <div class="row">
+        <h3 class="text-center" id="il2">Portofolio</h3>
+        <div class="col-md-4 mt-4">
+          <div class="card">
+            <img src="pic/por1.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h6><b>Atlethic</b></h6>
+              <p style="font-size:14px ;" class="font-monospace">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Nunc ut arcu vel nulla
+                gravida.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-4">
+          <div class="card">
+            <img src="pic/por2.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h6><b>Junior Programmer</b></h6>
+              <p style="font-size:14px ;" class="font-monospace">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Nunc ut arcu vel nulla
+                gravida.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-4">
+          <div class="card">
+            <img src="pic/por3.jpg" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h6><b>Leadership</b></h6>
+              <p style="font-size:14px ;" class="font-monospace">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Nunc ut arcu vel nulla
+                gravida.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
+  <div class="bg my-4 py-2" id="il3">
+    <div class="container ">
+      <div class="row">
+        <h3 class="text-center">Contact</h3>
+        <div class="i col-md my-4">
+          <div class="form-floating mb-3" style="width:500px ;">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <form class="form-floating" style="width:500px ;">
+            <input type="text" class="form-control" id="floatingInputValue" placeholder="name@example.com">
+            <label for="floatingInputValue">Name</label>
+          </form>
+          <div class="form-floating" style="width:500px ;">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+              style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Comments</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg1 ">
+    <div class="container ">
+      <div class="text-center text-white py-3 ">&copy; 2022. Camara. All Rights Reserved</div>
+    </div>
+  </div>
 </body>
 
 </html>
